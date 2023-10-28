@@ -1,0 +1,48 @@
+header {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #1f1d1b;
+    padding: 0 10px;
+}
+
+header a {
+    height: 100%;
+    width: auto;
+    font-size: 18px;
+}
+
+#logo {
+    width: 50px;
+    display: flex;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    font-size: 24px;
+}
+
+#logo img {
+    height: 80%;
+    margin: auto;
+}
+
+nav {
+    width: 500px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto 0;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 0 27px;
+    display: inline-flex;
+    align-items: center;
+    color: white;
+}
+
+nav a:hover {
+    background-color: #383838;
+}

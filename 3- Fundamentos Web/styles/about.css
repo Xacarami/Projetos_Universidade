@@ -1,0 +1,161 @@
+@import url('http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Ubuntu, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+.primeiroConteiner {
+    display: flex;
+    flex-direction: column;
+    background-color: #1F1D1B;
+    color: white;
+}
+
+.containerEu {
+    display: flex;
+}
+
+.nomeDescricao {
+    flex: 4;
+    display: block;
+    padding: 10px 20px 30px 60px;
+}
+
+.nomeDescricao h1 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.nomeDescricao p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+.nomeDescricao a {
+    text-decoration: underline;
+    color: rgb(145, 255, 178);
+}
+
+.nomeDescricao a:hover {
+    color: rgb(94, 133, 105);
+}
+
+.containerMinhaImagem {
+    flex: 1;
+    margin: auto;
+}
+
+.containerEu img {
+    padding: 20px;
+    width: 225px;
+    height: auto;
+    border-radius: 60px;
+}
+
+hr {
+    border: none;
+    border-bottom: 1px solid #3b3b3b;
+}
+
+.containerLinks {
+    display: flex;
+    align-items: center;
+    width: 600px;
+    justify-content: space-around;
+    margin: 20px auto 20px;
+}
+
+.containerLinks a {
+    font-size: 22px;
+    padding: 5px 10px;
+    background-color: rgb(44 143 6);
+    box-shadow: 0px 0px 5px 3px rgb(44 143 6);
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    height: 36px;
+    width: 152px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerLinks a:hover {
+    background-color: rgb(204, 0, 0);
+    box-shadow: 0px 0px 7px 3px rgb(204, 0, 0);
+}
+
+.containerLinks i {
+    padding-right: 10px;
+    scale: 0.9;
+}
+
+.segundoConteiner {
+    padding: 40px 0;
+}
+
+.segundoConteiner h1 {
+    text-align: center;
+}
+
+.listaCertificados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.listaCertificados ol {
+    list-style: none;
+}
+
+.listaCertificados li {
+    padding: 5px 0;
+}
+
+.listaCertificados i {
+    padding-right: 5px;
+}
+
+.listaCertificados ol li a {
+    font-size: 18px;
+    color: black;
+}
+
+.listaCertificados ol li a:hover {
+    color: green;
+}
+
+.terceiroConteiner {
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+
+.terceiroConteiner h1 {
+    padding: 60px 0 20px;
+    text-align: center;
+}
+
+.terceiroConteiner ol {
+    padding: 30px 60px;
+    font-size: 18px;
+}
+
+.terceiroConteiner ol[type="a"] {
+    padding: 0px 50px;
+}
+
+.terceiroConteiner li {
+    padding: 10px 0;
+    text-align: justify;
+}

@@ -1,0 +1,150 @@
+@import url('http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Ubuntu, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.primeiroContainer {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    color: white;
+    position: relative;
+
+    background: #252525a3;
+    background-image: url('../assets/primeiro_container_background.png');
+    background-repeat: no-repeat;
+    background-size: 130vw;
+    background-blend-mode: color-burn;
+    background-position-x: -200px;
+
+    box-shadow: inset 0px -12px 8px -3px #101010;
+}
+
+.primeiroContainer h3,
+.primeiroContainer h1 {
+    text-shadow: 0px 0px 11px black;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.primeiroContainer h1 {
+    font-size: 36px;
+}
+
+.primeiroContainer h3 {
+    padding-top: 20px;
+}
+
+.newsletter {
+    background-color: rgba(255, 255, 255, 0.808);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    padding: 20px 30px;
+    border-radius: 20px;
+    font-size: 20px;
+    text-align: center;
+    width: 450px;
+    height: 200px;
+}
+
+.newsletter a {
+    border: 1px solid #1f1d1ba9;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.507);
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+
+}
+
+.newsletter a:hover {
+    background-color: #1f1d1b;
+    color: white;
+}
+
+
+.segundoContainer {
+    height: 713px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    color: white;
+
+    background-image: url(../assets/segundo_container_background_mais_opaco.png);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-color: #101010;
+    background-blend-mode: color-dodge;
+    background-position-y: 130px;
+}
+
+.segundoContainer h3,
+.segundoContainer h1 {
+    text-align: center;
+    padding: 0 20px;
+}
+
+.instalar {
+    background-color: white;
+    padding: 30px;
+    border-radius: 30px;
+    margin-top: 60px;
+    box-shadow:
+        inset 0 0 10px 5px green,
+        0 0 70px 10px green;
+
+    animation-name: sobeDesce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.instalar:hover {
+    box-shadow:
+        inset 0 0 10px 5px red,
+        0 0 70px 10px red;
+}
+
+.instalar:hover img {
+    filter: saturate(2);
+}
+
+@keyframes sobeDesce {
+    0% {
+        margin-top: 60px;
+    }
+
+    50% {
+        margin-top: 100px;
+    }
+
+    100% {
+        margin-top: 60px;
+    }
+}
+
+.instalar img {
+    height: 60px;
+    margin: auto;
+    align-items: center;
+}
+
+/* fazer transição de cor para o contato */
+footer {
+    box-shadow: inset 1px 13px 9px -4px #101010;
+}

@@ -1,0 +1,76 @@
+@import url('http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Ubuntu, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#tituloForm {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.formulario {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.formList {
+    padding: 20px 0;
+}
+
+i {
+    width: 20px;
+}
+
+.inputForm {
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 16px;
+    padding: 2px;
+}
+
+.inputForm:focus {
+    outline: none;
+}
+
+.formButtons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.formButtons input {
+    padding: 10px;
+    width: 120px;
+    height: 45px;
+    font-size: 16px;
+    border: none;
+    background-color: #101010;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.formButtons input:hover {
+    background-color: #303030;
+}

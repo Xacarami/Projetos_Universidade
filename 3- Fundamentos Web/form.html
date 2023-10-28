@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="./styles/bottom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="scripts/mascaraTelefone.js"></script>
+    <script src="./scripts/copiarEmail.js"></script>
+    <title>Formulario</title>
+</head>
+
+<body>
+    <script src="scripts/header.js"></script>
+
+    <h1 id="tituloForm">Cadastre-se para receber as atualizações!</h1>
+
+    <form action="formAction.html" method="get">
+        <div class="formulario">
+
+            <div class="formList">
+                <label for="nome"><i class="fa fa-user" aria-hidden="true"></i></label>
+                <input type="text" name="nome" class="inputForm" placeholder="Nome" required>
+            </div>
+
+            <div class="formList">
+                <label for="email"><i class="fa fa-envelope" aria-hidden="true"></i></label>
+                <input type="email" name="email" class="inputForm" placeholder="Email" required>
+            </div>
+
+            <div class="formList">
+                <label for="fone"><i class="fa fa-phone" aria-hidden="true"></i></label>
+                <input type="tel" name="fone" class="inputForm" placeholder="Telefone/Celular"
+                    pattern="\(\d{2}\)\s\d{4,5}-\d{4}$" onkeydown="return mascaraTelefone(event)" required>
+            </div>
+
+            <div class="formList">
+                <label for="nascimento"><i class="fa fa-birthday-cake" aria-hidden="true"></i></label>
+                <input type="date" name="nascimento" class="inputForm" required>
+            </div>
+
+            <div class="formList">
+                <label for="senha"><i class="fa fa-unlock-alt" aria-hidden="true"></i></label>
+                <input type="password" name="senha" class="inputForm" placeholder="Senha" required>
+            </div>
+
+            <div class="formButtons">
+                <input type="submit" class="form-submit" value="Enviar">
+                <input type="reset" class="form-submit" value="Limpar">
+            </div>
+        </div>
+    </form>
+
+    <hr>
+
+    <footer>
+        <script src="scripts/bottom.js"></script>
+    </footer>
+</body>
+
+</html>
